@@ -21,67 +21,119 @@
         <style>
         * {
             margin: 0;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .btn-primary {
-            background: white;
-            color: #667eea;
-        }
-
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 2px solid white;
-        }
-
-        .btn-secondary:hover {
-            background: white;
-            color: #667eea;
-        }
-
-        .content {
-            background: white;
-            padding: 4rem 2rem;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #333;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-bottom: 4rem;
-        }
-
-        .service-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 2rem;
-            border-radius: 15px;
-            color: white;
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Computation SolveForce</title>
+                <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+                <style>
+                    :root {
+                        --primary: #1a237e;
+                        --accent: #00bcd4;
+                        --bg: #f5f7fa;
+                        --text: #222;
+                        --card: #fff;
+                    }
+                    * { box-sizing: border-box; }
+                    body {
+                        font-family: 'Roboto', Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        background: var(--bg);
+                        color: var(--text);
+                        min-height: 100vh;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    header {
+                        background: var(--primary);
+                        color: #fff;
+                        padding: 2.5rem 0 1.5rem 0;
+                        text-align: center;
+                        box-shadow: 0 2px 8px rgba(26,35,126,0.08);
+                    }
+                    header h1 {
+                        margin: 0 0 0.5rem 0;
+                        font-size: 2.5rem;
+                        font-weight: 700;
+                        letter-spacing: 1px;
+                    }
+                    header p {
+                        margin: 0;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        color: #b3c0f7;
+                    }
+                    main {
+                        flex: 1 0 auto;
+                        max-width: 700px;
+                        margin: 2.5rem auto 2rem auto;
+                        background: var(--card);
+                        padding: 2.5rem 2rem;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 24px rgba(26,35,126,0.07);
+                    }
+                    h2 {
+                        color: var(--primary);
+                        margin-top: 0;
+                    }
+                    .cta {
+                        display: inline-block;
+                        margin-top: 1.5rem;
+                        padding: 0.75rem 2rem;
+                        background: var(--accent);
+                        color: #fff;
+                        border: none;
+                        border-radius: 6px;
+                        font-size: 1.1rem;
+                        font-weight: 700;
+                        text-decoration: none;
+                        transition: background 0.2s;
+                        box-shadow: 0 2px 8px rgba(0,188,212,0.08);
+                    }
+                    .cta:hover {
+                        background: #0097a7;
+                    }
+                    footer {
+                        text-align: center;
+                        padding: 1.2rem 0 1rem 0;
+                        background: var(--primary);
+                        color: #fff;
+                        font-size: 1rem;
+                        letter-spacing: 0.5px;
+                        flex-shrink: 0;
+                        margin-top: auto;
+                    }
+                    @media (max-width: 600px) {
+                        main {
+                            padding: 1.2rem 0.5rem;
+                        }
+                        header h1 {
+                            font-size: 2rem;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+                <header>
+                    <h1>Computation SolveForce</h1>
+                    <p>Advanced computation & problem-solving solutions</p>
+                </header>
+                <main>
+                    <h2>Welcome to SolveForce</h2>
+                    <p>
+                        This site is your gateway to advanced computation, algorithms, and problem-solving resources.<br>
+                        Stay tuned for updates and new features coming soon!
+                    </p>
+                    <a class="cta" href="#">Contact Us</a>
+                </main>
+                <footer>
+                    &copy; 2025 Computation SolveForce. All rights reserved.
+                </footer>
+            </body>
+            </html>
         .service-card h3 {
             font-size: 1.8rem;
             margin-bottom: 1rem;
